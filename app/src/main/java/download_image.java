@@ -123,6 +123,3 @@ public class download_page extends AppCompatActivity {
             Toast.makeText(this, "DownloadError: " + ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
-
-}
-© 2020 GitHub, Inc.
