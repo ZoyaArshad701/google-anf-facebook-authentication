@@ -11,13 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/backnd"/>
+        android:src="@drawable/calery"
+
+        />
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:src="@drawable/user"
-        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/food"
+        android:layout_marginBottom="460dp"
         android:layout_centerHorizontal="true"/>
 
     <EditText
@@ -25,18 +27,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="150dp"
-        android:hint="Enter Email/phone number Here"
+        android:layout_marginBottom="2dp"
+        android:hint="Enter Email here"
         android:inputType="textEmailAddress"
         android:maxLength="25"
         android:maxLines="1"
         android:nextFocusDown="@id/PasswordET"
-        android:padding="10dp"
+        android:padding="18dp"
         android:textColorHighlight="@color/colorAccent"
         android:textColorHint="@color/colorPrimary"
         android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/PasswordET"
@@ -44,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/EmailET"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:hint="Enter the Password Here"
@@ -56,18 +60,20 @@
         android:textColorHint="@color/colorPrimary"
         android:textStyle="bold" />
 
-
     <Button
         android:id="@+id/Okbtn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/PasswordET"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/btn_layout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="95dp"
+        android:background="#abcdef"
         android:text="Sign Up"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold" />
+        android:textColor="#123456"
+        android:textStyle="bold"
+        />
+
 
     <Button
         android:id="@+id/Signbtn"
@@ -75,11 +81,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/Okbtn"
         android:layout_centerInParent="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_layout"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="7dp"
+        android:background="#abcdef"
         android:text="Sign In"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="#123456"
         android:textStyle="bold" />
 
     <ProgressBar
@@ -101,21 +107,20 @@
         android:layout_below="@id/Signbtn"
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_layout"
-
-        android:text="Google Sign-In"
-        android:textColor="@color/colorPrimaryDark"
+        android:background="#abcdef"
+        android:text="My COOKBOOK"
+        android:textColor="#123456"
         android:textStyle="bold" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
-        android:layout_width="350dp"
+        android:layout_width="40dp"
         android:layout_below="@id/GoogleSignIn"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="3dp"/>
 
     <Button
         android:id="@+id/Facebook"
@@ -124,17 +129,8 @@
         android:layout_below="@id/GoogleSignIn"
         android:layout_centerInParent="true"
         android:visibility="invisible"
-        android:background="@drawable/btn_layout"
-        android:drawableStart="@drawable/ic_google_logo"
         android:text="Facebook Sign-In"
-        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/Facebook"
-        android:id="@+id/text_user" />
 
 </RelativeLayout>
